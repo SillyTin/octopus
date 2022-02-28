@@ -69,7 +69,7 @@ class Graph(object):
         # insert edges on the graph
         insert_edges_to_graph(g, self.edges, call)
 
-        g.render(self.filename, view=view)
+        g.render(self.filename, view=False)
         # g.view()
 
 

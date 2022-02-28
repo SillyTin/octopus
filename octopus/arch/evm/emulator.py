@@ -250,6 +250,7 @@ class EvmEmulatorEngine(EmulatorEngine):
 
     def emul_comparaison_logic_instruction(self, instr, state):
 
+        args = None
         if instr.name in ['LT', 'GT', 'SLT', 'SGT',
                           'EQ', 'AND', 'OR', 'XOR', 'BYTE']:
             args = [state.ssa_stack.pop(), state.ssa_stack.pop()]
